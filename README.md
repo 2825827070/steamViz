@@ -32,7 +32,7 @@
 
 #### 1. 克隆或下载项目
 ```bash
-git clone <项目地址>
+git clone https://github.com/2825827070/steamViz
 cd SteamViz
 ```
 
@@ -73,7 +73,7 @@ python main.py
 ```
 
 #### 打包版本
-直接双击运行 `SteamViz.exe`
+dist文件夹内直接双击运行 `SteamViz.exe`
 
 ### 界面导航
 
@@ -100,25 +100,6 @@ python main.py
    - 搜索特定游戏
    - 数据清理功能
    - 同步日志查看
-
-### 数据同步
-
-#### 批量同步
-1. 进入「数据管理」页面
-2. 设置目标数量（默认 500 款游戏）
-3. 点击「开始同步」
-4. 等待同步完成
-
-#### 搜索同步
-1. 在搜索框输入游戏名称关键词
-2. 点击「搜索同步」
-3. 系统将自动搜索并同步匹配的游戏
-
-#### 注意事项
-- Steam API 有速率限制，频繁请求可能触发限流
-- 首次同步建议设置为 100-200 款
-- 可随时停止同步任务
-- 增量更新会自动跳过已同步数据
 
 ### 主题切换
 
@@ -158,19 +139,6 @@ SteamViz/
 └── build/                  # 打包输出目录
 ```
 
-## 打包说明
-
-### 使用 PyInstaller 打包
-
-```bash
-# 安装 PyInstaller
-pip install pyinstaller
-
-# 打包命令
-pyinstaller steam_viz.spec
-```
-
-打包完成后，可执行文件位于 `dist/steam_viz/SteamViz.exe`
 
 ## 日志查看
 
